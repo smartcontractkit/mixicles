@@ -1,0 +1,35 @@
+{
+  "name": "mixicles",
+  "version": "0.0.1",
+  "description": "Oracles for privacy preserving decentralized finance.",
+  "main": "index.js",
+  "repository": "git@github.com:smartcontractkit/mixicles.git",
+  "scripts": {
+    "compile": "truffle compile",
+    "console:dev": "truffle console --network cldev",
+    "console:live": "truffle console --network live",
+    "migrate:dev": "truffle migrate --reset --network cldev",
+    "migrate:live": "truffle migrate --network live",
+    "start": "node index.js",
+    "test": "truffle test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chainlink": "0.6.6-beta2",
+    "chainlink-test-helpers": "^0.6.1-beta-7",
+    "ethereumjs-abi": "^0.6.8",
+    "ethers": "^4.0.33",
+    "express": "^4.17.1",
+    "openzeppelin-test-helpers": "^0.4.2",
+    "request-promise-native": "^1.0.7",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.0",
+    "truffle": "^5.0.32",
+    "truffle-hdwallet-provider": "^1.0.8"
+  }
+}
